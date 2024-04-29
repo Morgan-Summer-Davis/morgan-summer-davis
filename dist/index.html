@@ -2,34 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Start Favicon  TODO Edit Favicon --> 
+    <!-- Start Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AQdChELqKxlgwAABlZJREFUaN7tmm2MVFcZx3//c++d2WF3oQtbLBVoSqEmaBOJRosxMX5oLCxGmlZjjUmbtosLiYm8xRi/8KX9oLsb1GpdlkbR1LdGVEqBqjGx0daYkrTWJipgt1LabFlYoLvDzss9jx9mlpY6L8vOnbIx80/mw+Q855znd16fc86FllpqqaWWkpdmYjR48BFOt99Od/Z3KVA7GEA2XBzmCqMFdmz4UtMc7H98L+vv+gtHDn7UIQtNAkfxteIpvzRcztZ19zUO+a3f/oCLE5Ok0ullwBcMPiFZYOhPgp+1UTyWJ+Ar6zclDvjwgSG6skVGO6NOxA2Caw0M8YZkI37e/Kw7P8bWT3959pADh4YAB7BY8BBwNzCvnJwDnsTYKfy/YwXsWP9AYoAPPrWP9sIkBRd1OGyNE9cDQTm5aMYrPrYXnNNUXPDs3NhXtSxXuyqVW8HWAne8DRAgDawHer3UIfOJAQLMsxxEQRhgN5UBHaV5YkAosVTOXRdFHhcFNcuqCTmNKLQC6Kpg0oa4B7TOO+f6Dw0nArj7yB6cQxa76wU38lYPTsuAFLIF/ziZLv+dJeTbFFB9aC8BtjizVQIGDzcGOnhoCPMiLtIBtgqRqUIhJ9xNSwq4OhQzhawpwVrBvUDGrLGyzAzviwGwAtFdt+4Z7A+JQFKan3cDa2XGwOG9sypk8OBe5AQKuwU38L/DdFZKChJguaAPdJ0Mvvmrb19R5j+/+HNiA/mwzclWItqpN9muAqSATwGf9/jIpduuKPNf//MmDnPIL0csSdCvRCEB5iPud+jDBuw+9OiMMu169qekJrNYwEKTrQSiuQwJsBrY7NC1Hs9gnW2l/8jDdJ6bYKqzLe1kKwXzk3aoGZAO2GBwZ+wJfZ1ZJZ/CvJdgmeC9zDCevtqQAF2CLYHjI1jE4OGhikb9Bx4hbMsg3CLBzUCqGc40CxLg/cBmKb8YX7lzgijAClNpyVYBC5rlSDMhHdAjdKehcODJy+fm4FOP4sNI5rVMpdi0qY40qkngYpW0LkQv4oPCGCiHfLsP7MHM43LFLsyvpBRMVFIMFOcC5LPA01TfuG8B+kxaiMGub2yGlEM+TlHa9K+plteM08AZGlyMkoB8BbPvASNV0kPBRuAzscx1fGANuXxRoKU4llYDMJg07BilkdKQkoAU0h+BnwD5KjaLBH2B6RYwwsAtANUaph40IoLRS3VcZUiASYN9wNEaNmsEDzhzi5y0QmJh1UYzxn1sL8v5hucjQJgQpDzuhLN4WNLNwKIKNhHwWcQJZCNU752cwXFvNhHYTA5S9ZXYFhKY9zJ+A/yS6ivie4D7geVUXmzMGye9+VNBkMwJJFFIBCadNeO7wHM1LN+H6ZOU5qNdXgJnhf6V9p05l2Bwl3gwEJt7CeP7wFgVk8jg44ZWc/mQnfLG8UIqfX4qNUWSIWyikG8CgXxs8ASwn9JmXkndGLcZdFO+gTPPq8T+1bZczn784hNJupUs5K6eXjwQODtrMAy8UMN8NcatlHr2nJcd95koHxcK/G3Hr+cuJMDOnl68FzKexxgGzlUxTYM+ZEbGvI6ZD8c1ZWzbuCVpl5oToG/r6cVE0cT+8tCtcvNs1wBjFOyks9h2bEjuBr7pkKWSDVdwbwiGgH9WNtII4iVFyru2ZG/g3xXI7bdvIg493ngOYw8w/g6TcTMei33wssex9ba+2VQzIyUV8VRUbJ5IynnYJygKfY7SjfvrGL8ws8dCxfkp38xjbZMhv1p+txw8vGccMYTnccwyiIsSZ51TYeu63qYCNh1yWtvWbQIoAKMNFjUrNXeczBG1IOeIGg5i5yykWenHW6/LFeVnsL3WhLz01mhMUlo4Khhx3kpKGNLhfWBmKlSB9EC+I13/8qDOc3q5bNnfgVMVTEaBZ+Ki4sRv92XkizJkp4F3nr0EZM04ky2G1HuKqA3pYgzD4KjB9I1ckdIR6jWDYQ+/DyIsHyfyXnpJ2fYJ2uYZPnSjJp0Askwfy2DCpGPeuTHvArJnpmq310wqHCi9TLXL+Bhwq5Ua5yjwNE4XiD3bNyT/HU//H34EFy5AOh05bDGmhWYYsjGTxuR9cXtP/Q+lrmiMPbR/mIkJCEPIZOBrdzQ/WpnW17/zQ1ymGy5G+K7XefCL975rdbfUUksttdTS/7P+C5sKWPEhOQf3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA0LTI5VDEwOjE3OjAwKzAwOjAwDk9DxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNC0yOVQxMDoxNzowMCswMDowMH8S+3oAAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTkyQF1xVQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxOTLTrCEIAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE3MTQzODU4MjCQjrXKAAAAD3RFWHRUaHVtYjo6U2l6ZQAwQkKUoj7sAAAAVnRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vbW50bG9nL2Zhdmljb25zLzIwMjQtMDQtMjkvYTAwZmI1YTRjYTk2MzRjMTdmMzExNTcyM2IzM2RkOGEuaWNvLnBuZzU3VakAAAAASUVORK5CYII="
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="data:image/png;base64,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FqYMVyePk6kgKQ/owduTuQVYU0011VRTTTXVtGj9F2hLc7CkeGiFAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA0LTI5VDEwOjE3OjAwKzAwOjAwDk9DxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNC0yOVQxMDoxNzowMCswMDowMH8S+3oAAAAgdEVYdHNvZnR3YXJlAGh0dHBzOi8vaW1hZ2VtYWdpY2sub3JnvM8dnQAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMTkyQF1xVQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxOTLTrCEIAAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE3MTQzODU4MjCQjrXKAAAAD3RFWHRUaHVtYjo6U2l6ZQAwQkKUoj7sAAAAVnRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vbW50bG9nL2Zhdmljb25zLzIwMjQtMDQtMjkvYTAwZmI1YTRjYTk2MzRjMTdmMzExNTcyM2IzM2RkOGEuaWNvLnBuZzU3VakAAAAASUVORK5CYII="
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="data:image/png;base64,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koZOsFumdcVMsvPK1X/n+guvq+YQqp8P65o1DycixLOIx4E9Kaq1AydIIG+b8OGHGZ/zN81M/+bgYSsMIIygkGOrjEcEL1E+km8AOhDbSHinf8+mwqiwvRZdr42wqBGyERDwJvAg8F6KartwrFdfYcfoXAd9H66vRddrI6zr7HmYeSy2yNAqoBcoDFJlN9grLtC7wbisGiYmLLz8+v8fYQALvnENCaIo2yLxAOJVDr00hXhdshV7fHM+IeS6k6q70X8mhAHcOHseoSQvvSJ0G/ACpaOT9l79iBckbo+9XgvjPVo466padrliGdfULJwzn0WrlhYTeCowbTDsbLyOAcBYh9kzJH5NxixaMKf2X5jUXBjAwlnz6e7tiYDXgDXsnfkyvHPE5pxu+Ma8WncT+IwIA1gw8xooLcNy6eyaUtM97HCkLmyI1IUNkbqwIVIXNkSGc5f0lD8spylTEbT302BDKvOiwL7geEikn2HSvqsfGDzFKbZJ5GuiTIZkibBCGSFFsKhkNf2zufTC7ONrLfD6ICVjjJeB92rjS2DKY9o6mDDBDi/tRMKrAl+z2cfZZL0leBRYd4gOeeANwWNxHHzgVf0vcpNsTKE5PyBnG2S249BS2SVsQ1xIdnkvony558vDEHbDrGvxSYJcpoj8csHPgWeADyi9B7YRWC64Be+fD8PYO6XvyEgRtLWTK7SKpubNgjdVSoPnJYslBgT/EbaGhoZ3w2Le25FHcPNF6bMfQ54Ct628j8AlCMsa+qLBNEEzaAfYvyXbgJEsnH111WUdyO0re5CXBRnX7LBR3ltWphjUj7QLZ97nI2666Ic17WedOnXq1KlTp06dOnXq1Pn8818rI4Blptd+NwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0yOVQxMDoxNzowMCswMDowMA5PQ8YAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMjlUMTA6MTc6MDArMDA6MDB/Evt6AAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNzE0Mzg1ODIwkI61ygAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDI0LTA0LTI5L2EwMGZiNWE0Y2E5NjM0YzE3ZjMxMTU3MjNiMzNkZDhhLmljby5wbmc1N1WpAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/apple-icon-114x114.2702aa38.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/apple-icon-120x120.010d5b5e.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/apple-icon-144x144.859b249d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/apple-icon-152x152.352f7794.png"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/apple-touch-icon.fb904684.png"
+      href="/assets/apple-icon-180x180.86a73937.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/android-icon-192x192.a7495521.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA9JJREFUWEfFV0kotWEUfi5CETKXISkkFoZEhrIyS+awMZQSyUzYYGHcGTIsJFNigaJkIRaGzFJmCxtKEiESV+fUvfnl++79bvf6T327977neZ/znPOcK5PL5XL8x5BpC8Dp6SnKy8thaGiI3t5e2NjYqPUsrQC4uLhAWFgY4uPj8fLyAj09PQwNDf0NgPf3dwQHByM8PBzt7e3Y3NxEXl4eDg4O/gZAd3c36Nvd3YWRkRFGRkYwPDyMhYUF3QN4fn6Gm5sbOjs7kZyczAmpDCEhIaipqdE9gJ6eHk5+eHgIfX19HB0dwdfXF8fHx3BxcdEtgM/PT3h7e6OwsJA/irS0NAYyPj6uVnI6pHEXrK6uIjo6GldXVzA3N8fKygoiIyOxt7cHDw8P3QPIzs6GiYkJC/Dt7Q0BAQEMqLW1Ve3kGjNwf38PZ2dnrK+vw8vLC01NTaz+7e1tmJqa6h5AV1cXpqensbi4iP39fR5C1HY0D6SGZA2Qdfj4+KChoYFrHhQUhPT0dNTW1krNzeclA1hbW0NWVhZOTk5QWVmJs7MzzM7Osvo1CckAcnNzWeX0EQDSgZWVlSa5pTNA4qPE9GLq+ZmZGXh6evIgcnd3h5mZmWQgkhigyUf9fn5+ztZLUVFRgevrawZCXWBsbCwJhNoASHz+/v4g94uJieGak/sVFxejpKREOQNiY2N1A4DaLCoqChEREbCzs2P6yfXIfGQyGQoKCtgH8vPztQ/g8fERgYGBeH19ZZNRKN/Pz4+TETu0D5SVlSEhIUG7AD4+PpCamsrCc3Jy4hrPzc3B1dWVE5EpdXR0oKWlBZeXl7CwsNAugLa2NlRXVysvzcnJYQESsJ2dHQwMDHAXjI6OIi4uTlJylYNoY2ODBff09MTTLyUlBVVVVZyE9j5iJDExEaWlpewNP4OGFZWPjEooRLuAnI223aWlJd71iH5HR0eMjY1xR1hbWzOQ34K2JfIG2hXEhCkKgMSVkZEBEpvi5TSGqefr6+sFX0W/o6QPDw+YmJjgLtGIgZubG558RKW9vT3fMTk5yZ6/tbUleCltRHV1dXzG0tJSVBeiDDQ3N/N0m5qaUl5CNXVwcGAbVnTC9wxUKlpMyK5DQ0NVilIQAKmc5juNX7Ld75GZmckGRAvp91heXkZSUhIaGxuVe6IqBIIA5ufnUVRUxCI0MDD45x5ihV7X19fH4MgLBgcH0d/fz3uCQi+qkou2IYmIGCCz+S1oKyI7pulIQcKkgUT0i4nu512CDCj+NItddnd3h9vbW55+tra2gi0pxoTabqgOnZqc+QJeMgu/tN42nAAAAABJRU5ErkJggg=="
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="data:image/png;base64,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"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAZJJREFUOE+Vk7/LQWEUx7+3WCys5N4MyiCD0cCmLIaLzaB0BxsZTCKJciM/k5RdFmVkuIMsd/YPmMR062bx6749T3lze3ldZ3nqdM7nnPM952E0TdPwwWRZhtlsht/v/xPJfAKs12ssl0soioJ+v/8d4Ha7QRAETCYT5PN5dDqd7wDz+ZwmOJ1ObDYb5HK57wCZTAa9Xg/pdBrj8RgWi8U4YLfbYTqdwmq1wuVyIRKJvJT6rYj1eh2hUAir1QqVSuXtnl4CrtcrCoUC7vc7isUibDYbTCaT8Q4WiwWd2ePx4Hg8wu12o1wuGwOQ6uFwGOS+yAqTySRKpRKq1aoxAGl9MBigVqshGo1iNBohEAggHo9/Bmy3WyQSCSpao9EAz/OIxWLwer00WZIkOBwOOtrDdCKez2cqmiiKyGaz6Ha7v4GHw4H6W62WrhMdYDabwW63IxgMYjgc0tfn89F/QE653W7Tu3g2HYAEkQoMw0BVVaRSKbAsi/1+j2azCY7j/r9EojxJftjlcsHpdKJVn/3PlB/ab8/RiKQmOgAAAABJRU5ErkJggg=="
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABIFBMVEUAAACOtZuOtpuOtpqPt5qNtpuPtpqPtZ2Ot5qPtKGOt5twl66OtJiNtJeOtpmTvp6exo2MtJuLtpuOtZuOtpuOtpuOtZqOtpqOt5qOtpuOtpuOtpuNtZuOtpqPt5qPt5qOtpqOtpuOtpuOtpuPtpqPt5qPt5qPt5qOtpuOtpuOtpuOtpuOt5qPt5qPt5qOtpuOtpuNtJqOtpuOtpuOtpuOtpuPtpqPt5qPt5qPt5qOtpuOtpuOtpuPt5qPt5qPt5qOtpuOtpuOtpuOtpuPt5qOtpqPt5qOtpuOtpuOtpuOtpuOtpqPt5qOtpuNtpuOtpuOtpuOtpuPt5qOtpuOtpuPt5qPt5qPt5qOtpuOtpuOtpuOt5qOt5qOt5uOtpv///9JMm6+AAAAXnRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAhUHAwcBNs18AwErSBNa60QYU1ogW/6+FghDWf19AeTy5zsSUVVQqpS5TTQ7oyTQpUkMOaRZ9t0tOgEJdHMIAUuRM1YaC0cfCxkE/Thy9QAAAAFiS0dEX3PRUS0AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfoBB0KEQw2yPAgAAAAo0lEQVQY02NgwACMwiKiTCAGs5i4BAuQZpKUkpZhZWBgk5WTVwALKMYpKTMxsrOoqKqpgwU0NOO0tJk4dHTV9OAC+gaGnHJ6ejCBOCNjE1MzcwtLuICVdZyNrZqdPcyMOAdHpzhnF1c3uIA7l4enlzeTD0LA188/IJAbIeDsy8TDyxcEEwj2DOEHup1JIDQsHCwQERnFJMjAIMQWHRPLxUAYAAD8LRuWWa1QYwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0yOVQxMDoxNzowMCswMDowMA5PQ8YAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMjlUMTA6MTc6MDArMDA6MDB/Evt6AAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNzE0Mzg1ODIwkI61ygAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDI0LTA0LTI5L2EwMGZiNWE0Y2E5NjM0YzE3ZjMxMTU3MjNiMzNkZDhhLmljby5wbmc1N1WpAAAAAElFTkSuQmCC"
     />
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+    <link rel="manifest" href="data:application/json;base64,ewogIm5hbWUiOiAiQXBwIiwKICJpY29ucyI6IFsKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMzZ4MzYucG5nIiwKICAgInNpemVzIjogIjM2eDM2IiwKICAgInR5cGUiOiAiaW1hZ2VcL3BuZyIsCiAgICJkZW5zaXR5IjogIjAuNzUiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tNDh4NDgucG5nIiwKICAgInNpemVzIjogIjQ4eDQ4IiwKICAgInR5cGUiOiAiaW1hZ2VcL3BuZyIsCiAgICJkZW5zaXR5IjogIjEuMCIKICB9LAogIHsKICAgInNyYyI6ICJcL2FuZHJvaWQtaWNvbi03Mng3Mi5wbmciLAogICAic2l6ZXMiOiAiNzJ4NzIiLAogICAidHlwZSI6ICJpbWFnZVwvcG5nIiwKICAgImRlbnNpdHkiOiAiMS41IgogIH0sCiAgewogICAic3JjIjogIlwvYW5kcm9pZC1pY29uLTk2eDk2LnBuZyIsCiAgICJzaXplcyI6ICI5Nng5NiIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICIyLjAiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMTQ0eDE0NC5wbmciLAogICAic2l6ZXMiOiAiMTQ0eDE0NCIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICIzLjAiCiAgfSwKICB7CiAgICJzcmMiOiAiXC9hbmRyb2lkLWljb24tMTkyeDE5Mi5wbmciLAogICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICJ0eXBlIjogImltYWdlXC9wbmciLAogICAiZGVuc2l0eSI6ICI0LjAiCiAgfQogXQp9" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- End Favicon  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katherine Beck</title>
+    <title>Morgan Davis</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-  <script type="module" crossorigin src="/assets/index.70e8a50b.js"></script>
-  <link rel="stylesheet" href="/assets/index.248b2eda.css">
+    
+  <script type="module" crossorigin src="/assets/index.3271123e.js"></script>
+  <link rel="stylesheet" href="/assets/index.a4a9f5d9.css">
 </head>
   <body>
     <!-- Contact Buttons -->
@@ -37,496 +93,203 @@
       <a
         href="#"
         id="menu"
-        class="
-          flex
-          h-12
-          items-center
-          shadow-md
-          justify-center
-          font-medium
-          rounded-md
-          text-white
-          bg-midnightblue
-          hover:bg-gray-600
-        "
+        class="flex h-12 items-center shadow-md justify-center font-medium rounded-md text-white bg-midnightblue hover:bg-gray-600"
       >
         <i class="fas fa-bars"></i>
       </a>
       <a
-        href="mailto:hello@katherinebeck.me"
-        class="
-          menuItem
-          flex
-          h-12
-          items-center
-          shadow-md
-          justify-center
-          border border-transparent
-          font-medium
-          rounded-full
-          text-white
-          bg-midnightblue
-          hover:bg-gray-600
-        "
+        href="mailto:morgansumdavis@gmail.com"
+        class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-midnightblue hover:bg-gray-600"
         target="_blank"
       >
         <i class="fas fa-envelope"></i>
       </a>
       <a
-        href="https://www.linkedin.com/in/katherine-m-beck/"
-        class="
-          menuItem
-          flex
-          h-12
-          items-center
-          shadow-md
-          justify-center
-          border border-transparent
-          font-medium
-          rounded-full
-          text-white
-          bg-midnightblue
-          hover:bg-gray-600
-        "
+        href="https://www.linkedin.com/in/morgan-summer-davis/"
+        class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-midnightblue hover:bg-gray-600"
         target="_blaank"
       >
         <i class="fab fa-linkedin"></i>
       </a>
       <a
-        href="https://github.com/kathmbeck"
-        class="
-          menuItem
-          flex
-          h-12
-          items-center
-          shadow-md
-          justify-center
-          border border-transparent
-          font-medium
-          rounded-full
-          text-white
-          bg-midnightblue
-          hover:bg-gray-600
-        "
+        href="https://github.com/morgan-summer-davis"
+        class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-midnightblue hover:bg-gray-600"
         target="_blank"
       >
         <i class="fab fa-github"></i>
       </a>
       <a
-        href="assets/Katherine_Beck_Resume.pdf"
+        href="assets/Morgan_Davis_Resume.pdf"
         target="_blank"
-        class="
-          menuItem
-          flex
-          h-12
-          items-center
-          shadow-md
-          justify-center
-          border border-transparent
-          font-medium
-          rounded-full
-          text-white
-          bg-midnightblue
-          hover:bg-gray-600
-        "
+        class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-midnightblue hover:bg-gray-600"
       >
         <i class="fas fa-file-alt"></i>
       </a>
     </div>
 
     <!-- Header -->
-    <div class="relative py-16 bg-white">
-      <div
-        class="hidden absolute top-0 inset-x-0 h-1/2 bg-white lg:block"
-        aria-hidden="true"
-      ></div>
-      <div class="max-w-7xl mx-auto bg-gray-200 lg:bg-transparent lg:px-8">
-        <div class="lg:grid lg:grid-cols-12">
-          <div
-            class="
-              relative
-              z-10
-              lg:col-start-1
-              lg:row-start-1
-              lg:col-span-4
-              lg:py-16
-              lg:bg-transparent
-            "
-          >
+    <div class="header relative pb-1 pt-64 lg:pt-0">
+      <div id="header" class="wrapper alt spotlight style2 pt-16">
+        <div class="max-w-7xl mx-auto lg:bg-transparent lg:px-8 -mt-64 lg:mt-0">
+          <div class="lg:grid lg:grid-cols-12">
             <div
-              class="absolute inset-x-0 h-1/2 bg-white lg:hidden"
-              aria-hidden="true"
-            ></div>
-            <div class="max-w-sm mx-auto px-4 sm:px-6 lg:p-0">
-              <div class="aspect-w-1 aspect-h-1">
-                <img
-                  class="object-cover object-center rounded-3xl shadow-2xl"
-                  src="/assets/Katherine_Site.92b5dfdc.png"
-                  alt=""
-                />
+              class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
+            >
+              <div class="max-w-sm mx-auto px-4 sm:px-6 lg:p-0">
+                <div class="aspect-w-1 aspect-h-1">
+                  <img
+                    class="object-cover object-center rounded-3xl shadow-2xl"
+                    src="/assets/Morgan.e0dc2835.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div
-            class="
-              relative
-              bg-gray-200
-              lg:col-start-3
-              lg:row-start-1
-              lg:col-span-10
-              lg:rounded-3xl
-              lg:grid lg:grid-cols-10
-              lg:items-center
-            "
-          >
             <div
-              class="
-                relative
-                max-w-md
-                mx-auto
-                py-12
-                px-4
-                sm:max-w-3xl
-                sm:py-16
-                sm:px-6
-                lg:max-w-none
-                lg:p-0
-                lg:col-start-4 lg:col-span-6
-              "
+              class="relative lg:bg-white lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
             >
-              <h2
-                class="text-3xl font-extrabold text-gray-900"
-                id="join-heading"
+              <div
+                class="relative max-w-md mx-auto py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
               >
-              &#x1f44b; Hi! I'm Katherine. 
-              </h2>
-              <h4 class="text-xl text-gray-500 mt-1">
-                Los Angeles, California
-              </h4>
-              <p class="text-lg text-gray-900 mt-6">
-                I'm a full-stack Software Engineer currently based in 
-                Los Angeles, California, with experience in
-                JavaScript/Node.js, Ruby, PostgreSQL, AWS, Docker, and React. 
-              </p>
-              <p class="text-lg text-gray-900 mt-6">
-                Most recently, I built
+                <h2
+                  class="text-3xl font-extrabold text-white lg:text-gray-900"
+                  id="join-heading"
+                >
+                  &#x1f44b; Hi! I'm Morgan.
+                </h2>
+                <h4 class="text-xl text-light lg:text-gray-500 mt-1">
+                  Harrisburg, Pennsylvania
+                </h4>
+                <p class="text-lg text-white lg:text-gray-900 mt-6">
+                  I'm a full-stack Software Engineer currently based in
+                  Harrisburg, Pennsylvania, with experience in JavaScript,
+                  TypeScript, Node.js, Express, React, Go, PostgreSQL, MongoDB,
+                  Docker, and AWS. I'm seeking opportunities locally, in
+                  Philadelphia, Pennsylvania, or New York, New York.
+                </p>
+                <p class="text-lg text-white lg:text-gray-900 mt-6">
+                  Most recently, I built
+                  <a
+                    class="text-reverb-200 hover:text-reverb-100"
+                    href="https://reverb-app.github.io/"
+                    target="_blank"
+                    >Reverb</a
+                  >, an event-driven, asynchronous workflow engine that reliably
+                  orchestrates complex background jobs.
+                </p>
                 <a
-                  class="text-grouparooblue hover:text-airbytepurple"
-                  href="https://tapestry-pipeline.github.io/"
+                  class="mt-6 block w-full py-3 px-5 text-center bg-midnightblue border border-transparent rounded-md shadow-md text-base font-medium text-white hover:opacity-70 sm:inline-block sm:w-auto"
+                  href="assets/Morgan_Davis_Resume.pdf"
                   target="_blank"
-                  >Tapestry</a
-                >, an open-source
-                pipeline orchestration framework 
-                for user entity data. 
-              </p>
-              <a
-                class="
-                  mt-6
-                  block
-                  w-full
-                  py-3
-                  px-5
-                  text-center
-                  bg-midnightblue
-                  border border-transparent
-                  rounded-md
-                  shadow-md
-                  text-base
-                  font-medium
-                  text-white
-                  hover:opacity-70
-                  sm:inline-block
-                  sm:w-auto
-                "
-                href="assets/Katherine_Beck_Resume.pdf"
-                target="_blank"
-                ><span class="text-xl mr-3"
-                  ><i class="fas fa-file-alt"></i></span
-                >Resume</a
-              >
-              <a
-                class="
-                  mt-6
-                  sm:mx-2
-                  block
-                  w-full
-                  py-3
-                  px-5
-                  text-center
-                  bg-grouparooblue
-                  border border-transparent
-                  rounded-md
-                  shadow-md
-                  text-base
-                  font-medium
-                  text-white
-                  hover:bg-airbytepurple
-                  sm:inline-block
-                  sm:w-auto
-                "
-                href="https://tapestry-pipeline.github.io/case-study"
-                target="_blank"
-                >Read Tapestry Case Study</a
-              >
+                  ><span class="text-xl mr-3"
+                    ><i class="fas fa-file-alt"></i></span
+                  >Resume</a
+                >
+                <a
+                  class="mt-6 sm:mx-2 block w-full py-3 px-5 text-center bg-grouparooblue border border-transparent rounded-md shadow-md text-base font-medium text-white hover:bg-airbytepurple sm:inline-block sm:w-auto"
+                  href="https://reverb-app.github.io/#case-study"
+                  target="_blank"
+                  >Read Reverb Case Study</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Tapestry -->
-    <div class="relative py-16">
-      <div
-        class="hidden absolute top-0 inset-x-0 h-1/2 lg:block"
-        aria-hidden="true"
-      ></div>
-      <div class="bg-gradient-to-r from-airbytepurple to-grouparooblue">
-        <div
-          class="
-            max-w-7xl
-            mx-auto
-            lg:to-transparent
-            lg:from-transparent
-            lg:bg-transparent
-            lg:px-8
-          "
-        >
+    <!-- Reverb -->
+    <div class="relative py-1">
+      <div class="wrapper spotlight style7">
+        <div class="max-w-7xl mx-auto lg:px-8">
           <div class="lg:grid lg:grid-cols-12">
             <div
-              class="
-                relative
-                z-10
-                lg:col-start-1
-                lg:row-start-1
-                lg:col-span-4
-                lg:py-16
-                lg:bg-transparent
-              "
+              class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent"
             >
-              <div
-                class="absolute inset-x-0 h-1/2 bg-white lg:hidden"
-                aria-hidden="true"
-              ></div>
               <div class="max-w-sm mx-auto px-4 sm:px-6 lg:p-0">
-                <div class="aspect-w-1 aspect-h-1">
+                <a href="https://reverb-app.github.io/">
                   <img
-                    class="object-cover object-center bg-white rounded-3xl shadow-2xl"
-                    src="/assets/tapestry_graphic.5952719d.png"
+                    class="object-cover object-center"
+                    src="/assets/reverb_logo.94006aa8.png"
                     alt=""
                   />
-                </div>
+                </a>
               </div>
-              
             </div>
 
             <div
-              class="
-                relative
-                lg:col-start-3
-                lg:row-start-1
-                lg:col-span-10
-                lg:rounded-3xl
-                lg:grid lg:grid-cols-10
-                lg:items-center
-                lg:py-12
-              "
+              class="relative lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center lg:py-12"
             >
               <div
-                class="
-                  relative
-                  max-w-md
-                  mx-auto
-                  py-12
-                  px-4
-                  sm:max-w-3xl
-                  sm:py-16
-                  sm:px-6
-                  lg:max-w-none
-                  lg:p-0
-                  lg:col-start-4 lg:col-span-6
-                "
+                class="relative max-w-md mx-auto py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
               >
-              <p class="text-2xl text-white mt-6">
-                Tapestry automates the deployment of an end-to-end user data pipeline, with both data ingestion and syncing
-                components. 
-              </p>
-              <p class="text-2xl text-white mt-6"> 
-                Tapestry was built for developers who want full control over their data infrastructure, 
-                but without having to provision that infrastructure themselves. 
-              </p>
-              <br>
+                <p class="text-2xl text-white mt-6">
+                  Reverb orchestrates the logic and infrastructure developers
+                  need to build complex background tasks.
+                </p>
+                <p class="text-2xl text-white mt-6">
+                  Developers are able to define background jobs within their own
+                  codebase and Reverb will reliably handle their execution,
+                  retries, and monitoring, step-by-step.
+                </p>
+                <p class="text-2xl text-white mt-6">
+                  The service is self-hosted on AWS and is deployable with one
+                  command.
+                </p>
+                <br />
                 <div class="wrap mx-auto">
-                  <div class="grid grid-rows-10 grid-cols-6">
-                    
-                    <div class="row-start-1 col-start-2 col-span-5 self-end">
-                      <img class="object-cover rounded-lg" src="/assets/tap_ui_home_v2.e8117018.png" alt="">
-                    </div>
-                    <div class="row-start-2 col-start-1 col-span-5 self-end ">
-                      <img class="rounded-lg" src="/assets/overview-katherine_v2.d83e685a.gif" alt="">
-                    </div>
-                  </div>
                   <a
-                class="
-                  mt-6
-                  sm:mx-2
-                  block
-                  w-full
-                  py-3
-                  px-5
-                  text-center
-                  bg-white
-                  border border-transparent
-                  rounded-md
-                  shadow-md
-                  text-base
-                  font-medium
-                  text-grouparooblue
-                  hover:bg-white
-                  hover:text-airbytepurple
-                  sm:inline-block
-                  sm:w-auto
-                "
-                href="https://tapestry-pipeline.github.io/case-study"
-                target="_blank"
-                >Read Tapestry Case Study</a
-              >
-              <a
-                class="
-                  mt-6
-                  sm:mx-2
-                  block
-                  w-full
-                  py-3
-                  px-5
-                  text-center
-                  bg-white
-                  border border-transparent
-                  rounded-md
-                  shadow-md
-                  text-base
-                  font-medium
-                  text-grouparooblue
-                  hover:bg-white
-                  hover:text-airbytepurple
-                  sm:inline-block
-                  sm:w-auto
-                "
-                href="https://tapestry-pipeline.github.io/case-study#toc-presentation"
-                target="_blank"
-                >Watch the Presentation</a
-              > 
+                    class="mt-6 sm:mx-2 block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-reverb-200 hover:bg-white hover:text-reverb-100 sm:inline-block sm:w-auto"
+                    href="https://reverb-app.github.io/#case-study"
+                    target="_blank"
+                    >Read Reverb Case Study</a
+                  >
                 </div>
-                
-                
-              <!-- <div>
-                <img class="rounded-lg shadow-lg" src="images/fullarchitecture_white.png" alt="">
-              </div> -->
+              </div>
             </div>
           </div>
-        
-          </div>
-        
-        
-  
+        </div>
       </div>
     </div>
-  </div>
 
     <!-- Other Projects -->
-    <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-28 lg:px-8">
+    <div
+      class="relative pt-1 pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8 wrapper alt spotlight style3"
+    >
       <div class="absolute inset-0">
-        <div class="bg-white h-1/3 sm:h-2/3"></div>
+        <div class="bg-[#353849] h-1/3 sm:h-2/3"></div>
       </div>
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2
-            class="
-              text-3xl
-              tracking-tight
-              font-extrabold
-              text-gray-900
-              sm:text-4xl
-            "
+            class="text-3xl tracking-tight font-extrabold text-white sm:text-4xl"
           >
             Other Projects
           </h2>
         </div>
         <div
-          class="
-            mt-12
-            max-w-lg
-            mx-auto
-            grid
-            gap-10
-            xl:grid-cols-3
-            lg:grid-cols-3
-            md:grid-cols-2
-            md:max-w-none
-          "
+          class="mt-12 max-w-lg mx-auto grid gap-10 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 md:max-w-none"
         >
-        
           <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
               <img
                 class="h-40 drop-shadow-lg filter object-scale-down"
-                src="/assets/reaction.49b4ba2c.png"
-                alt=""
-              />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-xl font-semibold text-gray-900 mt-2">Reaction</p>
-                <p class="mt-3 text-base text-gray-500">
-                  Trello-like task management app.
-                </p>
-                <p class="mt-3 text-base text-airbytepurple">
-                  Node.js/Express, MongoDB, React/Redux
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
-              <img
-                class="h-40 drop-shadow-lg filter object-scale-down"
-                src="/assets/dijkstra.139d635c.png"
+                src="images/reaction.png"
                 alt=""
               />
             </div>
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
               <div class="flex-1">
                 <p class="text-xl font-semibold text-gray-900 mt-2">
-                  Airline Routes
+                  HTTP Hoarder
                 </p>
                 <p class="mt-3 text-base text-gray-500">
-                  Airline routing application leveraging Dijkstra's algorithm to
-                  find the shortest path.
-                </p>
-                <p class="mt-3 text-base text-airbytepurple">React, JavaScript</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
-              <img
-                class="h-40 drop-shadow-lg filter object-scale-down"
-                src="/assets/todotracker.8ca48b3c.png"
-                alt=""
-              />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-xl font-semibold text-gray-900 mt-2">
-                  ToDo List 
-                </p>
-                <p class="mt-3 text-base text-gray-500">
-                  An interactive todo list manager. Node.js, Handlebars.js, jQuery and an Express.js API.
+                  An application for collecting and inspecting webhooks and HTTP
+                  requests
                 </p>
                 <p class="mt-3 text-base text-airbytepurple">
-                  Node.js/Express, Handlebars, HTML/CSS
+                  Node.js, Express, PostgreSQL, MongoDB, React.
                 </p>
               </div>
             </div>
@@ -536,20 +299,21 @@
             <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
               <img
                 class="h-40 drop-shadow-lg filter object-scale-down"
-                src="/assets/messbuck.0c2b46b9.png"
+                src="images/dijkstra.png"
                 alt=""
               />
             </div>
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
               <div class="flex-1">
                 <p class="text-xl font-semibold text-gray-900 mt-2">
-                  Message Bucket 
+                  Pantry Pal
                 </p>
                 <p class="mt-3 text-base text-gray-500">
-                  RequestBin-like tool for receiving and debugging webhooks.
+                  A Single Page Application for recording recipes and managing
+                  ingredient stock
                 </p>
                 <p class="mt-3 text-base text-airbytepurple">
-                  Node.js/Express, PostgreSQL, Webhooks
+                  Ruby, Sinatra, ERB, SQL
                 </p>
               </div>
             </div>
@@ -559,36 +323,34 @@
             <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
               <img
                 class="h-40 drop-shadow-lg filter object-scale-down"
-                src="/assets/lsa_app.feac1d33.png"
+                src="images/todotracker.png"
                 alt=""
               />
             </div>
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
               <div class="flex-1">
                 <p class="text-xl font-semibold text-gray-900 mt-2">
-                  Language Sample Analyzer
+                  HelloCart
                 </p>
                 <p class="mt-3 text-base text-gray-500">
-                  An app for transcribing early language samples and automating structural analysis.
+                  An e-commerce shopping cart frontend application
                 </p>
                 <p class="mt-3 text-base text-airbytepurple">
-                  Ruby/Sinatra, ERB
+                  React, Express, Node.js, MongoDB
                 </p>
               </div>
             </div>
           </div>
-
-
- 
-
-
         </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class="bg-grouparooblue">
-      <div class="mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+    <div class="pt-1">
+      <div
+        id="footer"
+        class="mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 wrapper spotlight style2"
+      >
         <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
           <span class="block">Let's Connect!</span>
         </h2>
@@ -598,101 +360,33 @@
         </p>
         <div class="flex items-center justify-center flex-wrap">
           <a
-            href="mailto:hello@katherinebeck.me"
-            class="
-              w-2/5
-              mt-4
-              mx-2
-              inline-flex
-              items-center
-              shadow-md
-              justify-center
-              px-5
-              py-2
-              border border-transparent
-              font-medium
-              rounded-md
-              text-midnightblue
-              bg-white
-              hover:bg-gray-300
-              sm:w-auto
-            "
+            href="mailto:morgansumdavis@gmail.com"
+            class="w-2/5 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent font-medium rounded-md text-midnightblue bg-white hover:bg-gray-300 sm:w-auto"
             target="_blank"
           >
             <span class="text-xl mr-3"><i class="fas fa-envelope"></i></span
             >Email
           </a>
           <a
-            href="https://www.linkedin.com/in/katherine-m-beck"
-            class="
-              w-2/5
-              mt-4
-              mx-2
-              inline-flex
-              items-center
-              shadow-md
-              justify-center
-              px-5
-              py-2
-              border border-transparent
-              font-medium
-              rounded-md
-              text-midnightblue
-              bg-white
-              hover:bg-gray-300
-              sm:w-auto
-            "
+            href="https://www.linkedin.com/in/morgan-summer-davis"
+            class="w-2/5 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent font-medium rounded-md text-midnightblue bg-white hover:bg-gray-300 sm:w-auto"
             target="_blank"
           >
             <span class="text-xl mr-3"><i class="fab fa-linkedin"></i></span
             >LinkedIn
           </a>
           <a
-            href="https://github.com/kathmbeck"
-            class="
-              w-2/5
-              mt-4
-              mx-2
-              inline-flex
-              items-center
-              shadow-md
-              justify-center
-              px-5
-              py-2
-              border border-transparent
-              font-medium
-              rounded-md
-              text-midnightblue
-              bg-white
-              hover:bg-gray-300
-              sm:w-auto
-            "
+            href="https://github.com/morgan-summer-davis"
+            class="w-2/5 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent font-medium rounded-md text-midnightblue bg-white hover:bg-gray-300 sm:w-auto"
             target="_blank"
           >
             <span class="text-xl mr-3"><i class="fab fa-github"></i></span
             >GitHub
           </a>
           <a
-            href="assets/Katherine_Beck_Resume.pdf"
+            href="assets/Morgan_Davis_Resume.pdf"
             target="_blank"
-            class="
-              w-2/5
-              mt-4
-              mx-2
-              inline-flex
-              items-center
-              shadow-md
-              justify-center
-              px-5
-              py-2
-              border border-transparent
-              font-medium
-              rounded-md
-              text-midnightblue
-              bg-white
-              hover:bg-gray-300
-              sm:w-auto
-            "
+            class="w-2/5 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent font-medium rounded-md text-midnightblue bg-white hover:bg-gray-300 sm:w-auto"
           >
             <span class="text-xl mr-3"><i class="fas fa-file-alt"></i></span
             >Resume
